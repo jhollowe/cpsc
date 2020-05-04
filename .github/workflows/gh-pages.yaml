@@ -1,0 +1,30 @@
+name: "Deploy to gh-pages branch"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull Repo
+        uses: actions/checkout@v2
+        with:
+          submodules: true # fetch themes
+          fetch-depth: 0   # pull all commits so .GitInfo can find info for all files
+
+      - name: Get Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_BUILD_KEY }}
+          publish_dir: ./public
