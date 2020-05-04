@@ -1,6 +1,0 @@
-baseURL = "https://johnhollowell.com/cpsc/"
-# baseurl = "http://example.org/"
-languageCode = "en-us"
-title = "CPSC Learning Lessons"
-theme = "ace-doc"
-publishdir = "docs/"

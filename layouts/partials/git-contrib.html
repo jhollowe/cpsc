@@ -1,0 +1,10 @@
+<div class="d-inline-flex mx-auto mt-5 px-3 py-2 bg-light justify-content-start">
+	<h6>
+		<a href="{{ .Permalink }}">
+			“{{ .Title }}”
+		</a> was last updated: {{ .Lastmod.Format "Jan 02, 2006" }}{{ if .GitInfo }}: <a href="{{$.Site.Params.ghrepo}}commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }}
+			({{ .GitInfo.AbbreviatedHash }})</a>
+		<br />
+		<a href="{{ $.Site.Params.ghrepo }}edit/master/content/{{.File.Path}}" class="btn btn-outline-primary mt-2">Contribute to this page</a>{{ end }}
+	</h6>
+</div>

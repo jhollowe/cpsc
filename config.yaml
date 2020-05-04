@@ -1,0 +1,21 @@
+baseURL: "https://johnhollowell.com/cpsc/"
+languageCode: "en-us"
+title: "CPSC Learning Lessons"
+theme: "ace-doc"
+publishdir: "docs/"
+enableEmoji: true
+enableRobotsTXT: true
+
+# pulls information from git commit for modified date and info
+enableGitInfo: true
+params:
+  ghrepo: "https://github.com/jhollowe/cpsc/"
+
+# googleAnalytics: "UA-36251750-13"
+
+# Add things to the header navbar
+# menu:
+#   shortcuts:
+#     - name: "<i class='fab fa-github'></i>"
+#       url: "https://github.com/jhollowe/cpsc"
+#       weight: "1"
