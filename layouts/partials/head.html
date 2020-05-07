@@ -12,10 +12,10 @@
     </title>
 
     <!-- Load stylesheet -->
-    <link href="{{ .Site.BaseURL }}css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fontawesome.min.css" integrity="ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=">
 
-    {{ $style := resources.Get "css/cpsc.scss" | toCSS | minify }}
-		<link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $style := resources.Get "css/cpsc.scss" | toCSS | minify | resources.Fingerprint }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
     <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
     {{ if eq hugo.Environment "production" }}
