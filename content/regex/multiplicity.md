@@ -15,9 +15,9 @@ Adding a multiplier character to the end of a character set (or a later-learned 
 
 | Character | Multiplier |
 | --------- | ---------- |
-| \*        | 0 or more  |
-| +         | 1 or more  |
-| ?         | 0 or 1     |
+| `\*`      | 0 or more  |
+| `+`       | 1 or more  |
+| `?`       | 0 or 1     |
 
 ##### Examples
 
@@ -34,8 +34,8 @@ You can also specify a specific multiplicity or range of multiplicity for a char
 
 | Multiplicity | Number of Occurences |
 | ------------ | -------------------- |
-| {3}          | exactly 3            |
-| {2,5}        | 2, 3, 4, or 5        |
-| {4,}         | 4 or more            |
+| `{3}`        | exactly 3            |
+| `{2,5}`      | 2, 3, 4, or 5        |
+| `{4,}`       | 4 or more            |
 
 So `he[l]{2,5}o` will match "hello" through "helllllo".

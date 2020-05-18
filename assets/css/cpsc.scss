@@ -1,29 +1,32 @@
+@import "ace_edited";
+// import part of bootstrap so variables can be used
+@import "bootstrap/functions";
+@import "bootstrap/variables";
 
 // Define overrides for variables used in Bootstrap
+$table-accent-bg: rgba($primary, 0.16);
+$table-hover-bg: rgba($primary, 0.24);
 
-
-@import "bootstrap/bootstrap";
-@import "ace_edited";
-
+// bootstrap wrapper so functions and variables are not included twice
+@import "bootstrap-wrapper";
 
 table {
-	@extend .table;
-	@extend .table-striped;
-	@extend .table-hover;
-	@extend .table-responsive;
+  @extend .table;
+  @extend .table-striped;
+  @extend .table-hover;
+  @extend .table-responsive;
 }
 
-
 code {
-	// TODO make this lighten base on the base text color variable
-	color: lighten($color: #212529, $amount: 10);
-	background-color: rgba(27,31,35,.05);
-	border-radius: 0.2rem;
+  // TODO make this lighten base on the base text color variable
+  color: lighten($color: #212529, $amount: 10);
+  background-color: rgba(27, 31, 35, 0.07);
+  border-radius: 0.2rem;
 }
 
 .read-time {
-	font-style: italic;
-	padding-top: 0;
-	font-size: 0.8rem;
-	margin-bottom: 1rem;
+  font-style: italic;
+  padding-top: 0;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
