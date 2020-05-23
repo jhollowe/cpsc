@@ -46,11 +46,11 @@
 
             {{- with ($.Scratch.Get "prevPage") -}}
                 <a class="p-1 mr-3 d-inline-block text-white" href="{{.RelPermalink}}" title="{{.Title}}"><i class="fas fa-chevron-left pr-1
-                    {{if intersect (union (slice .Site.Home) .Site.Sections) (slice .)}} fa-lg{{end}}"></i>{{.Title}}</a> <!-- use larger chevron for Home and Sections --> 
+                    {{if intersect (union (slice .Site.Home) .Site.Sections) (slice .)}} icon-xl{{end}}"></i>{{.Title}}</a> <!-- use larger chevron for Home and Sections --> 
             {{ end -}}
             {{- with ($.Scratch.Get "nextPage") -}}
                 <a class="p-1 ml-3 d-inline-block text-white text-right" href="{{.RelPermalink}}" title="{{.Title}}">{{.Title}}<i class="fas fa-chevron-right p-1
-                    {{if intersect .Site.Sections (slice .)}} fa-lg{{end}}"></i></a>
+                    {{if intersect .Site.Sections (slice .)}} icon-xl{{end}}"></i></a>
             {{- end }}
         {{- end -}}
     </div>
