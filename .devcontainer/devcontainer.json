@@ -1,0 +1,14 @@
+{
+  "image": "ubuntu:latest",
+  "forwardPorts": [1313],
+  "extensions": [
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint"
+  ],
+  "settings": {
+    "markdown.extension.toc.githubCompatibility": true,
+    "markdown.extension.toc.unorderedList.marker": "*"
+  }
+}
