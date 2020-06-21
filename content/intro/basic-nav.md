@@ -6,8 +6,8 @@ draft: false
 weight: 1
 ---
 
-
 There are three main navigation tools on this site.
+
 1. The Navbar on the left (click the three bars if on mobile to see)
 2. The Table of Contents on the right
 3. The Previous and Next page footer
@@ -20,6 +20,7 @@ When you select a section (like "Intro" is selected now), all the pages in that 
 ### The Table of Contents
 
 The Table of Contents is automatically generated from the headings on the page. The TOC can be used to jump to sections of the current page.
+Some pages don't need a TOC and may have it turned off.
 
 ### The Navigation Footer
 

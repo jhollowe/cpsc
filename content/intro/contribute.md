@@ -21,4 +21,4 @@ While adding various topics could be added to this site, I would like to keep th
 
 Suggesting a new topic or page within an existing can be done by creating an Issue on the GitHub repo. Instructions can be found in the [GitHub](/cpsc/github/issues) topic.
 
-New information can also be added as it comes to light.
+New information can also be added to existing sections and pages.
