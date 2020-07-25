@@ -17,8 +17,12 @@ Improvements can be made by creating Pull Request (PR) on the GitHub repo. Instr
 ### Suggest a New Topic
 
 Adding new topics and pages is a great way to add to this site.
-While adding various topics could be added to this site, I would like to keep this site focused with a limited scope.
+While adding various topics could be added to this site, I would like to keep the contentc of this site focused.
 
 Suggesting a new topic or page within an existing can be done by creating an Issue on the GitHub repo. Instructions can be found in the [GitHub](/cpsc/github/issues) topic.
 
 New information can also be added to existing sections and pages.
+
+### Adding to Topics Link Lists
+
+Most topics have a page with links to other resources and information. Feel free to submit PRs for new links and resources.
