@@ -5,4 +5,4 @@ publish = "public/"
 command = "hugo --gc --minify"
 
 [build.environment]
-HUGO_BASE_URL = "https://cpsc.johnhollowell.com/"
+HUGO_BASEURL = "https://cpsc.johnhollowell.com/"
