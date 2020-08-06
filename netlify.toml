@@ -1,0 +1,11 @@
+[build]
+# the folder where Hugo builds the site and Netlify will serve
+publish = "public/"
+# the build command
+command = "hugo --gc --minify"
+
+# fix the path assuming the GitHub pages path
+[[redirects]]
+from = "/cpsc/*"
+to = "/*"
+status = 301
