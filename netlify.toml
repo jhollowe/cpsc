@@ -2,4 +2,4 @@
 # the folder where Hugo builds the site and Netlify will serve
 publish = "public/"
 # the build command
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b ${DEPLOY_PRIME_URL}/"
