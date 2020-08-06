@@ -6,6 +6,6 @@ command = "hugo --gc --minify"
 
 # fix the path assuming the GitHub pages path
 [[redirects]]
-from = "/cpsc"
+from = "/cpsc/*"
 to = "/"
 status = 301
