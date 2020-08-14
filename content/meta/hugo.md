@@ -9,6 +9,7 @@ weight: 1
 ## Components
 
 [Hugo](https://gohugo.io/) is a tool that takes a layout template and generates a site from simple content files and the layout.
+While there definetly more aspects and configuration for Hugo, these are the the main aspects that will repeatedly be changed and added.
 
 ### Themes
 
@@ -29,6 +30,11 @@ Shortcodes are Hugo tools that allow inserting small templates of HTML into the 
 
 Some examples include a youtube, tweet, or gist embed shortcodes.
 
+### Static Files
+Static files like images, javascript, and static stylesheets are contained within the `static` directory. These files are served on the base path of the site. This is meant for files taht should be universally accessible for all your pages, such as logos, favicons, scripts, and stylesheets. For this site, Sass files are used for styling which Hugo (the extended version) automatically compiles down to CSS and places in the appropriate location.
+
+Files for a specific page are included in the same directory where the page is located.
+
 ## Using Hugo
 
 Hugo has a few basic commands to create, build, and test-serve your pages.
@@ -37,3 +43,7 @@ Hugo has a few basic commands to create, build, and test-serve your pages.
 * `hugo new <path/file.md>` creates a new file, path starts in `content`
 * `hugo server` builds the site in memory and serves it locally for testing
 * `hugo --minify` builds the site to files (defaults to the `public` directory) and minifies the files
+
+
+
+[Shortcodes]: https://gohugo.io/content-management/shortcodes/
