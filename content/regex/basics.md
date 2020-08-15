@@ -12,7 +12,7 @@ Regular expressions are a specially formatted string that has special rules used
 
 ### Characters and Digits
 
-Regexes use some characters as special characters which add functionality. If you need to use the character without its special meaning, you can escape it with a backslash "\".
+Regexes use some characters as special characters which add functionality. If you need to use the character without its special meaning, you can escape it with a backslash "\\".
 
 | Character Sequence | Special Function                                           | Usage                 | Match(es)              |
 | ------------------ | ---------------------------------------------------------- | --------------------- | ---------------------- |
@@ -25,7 +25,7 @@ Regexes use some characters as special characters which add functionality. If yo
 | `\S`               | Inverse of \s                                              | `ab\Sd`               | ab\$d                  |
 | `\\`               | the backslash character                                    | `\\`                  | \                      |
 
-By default, regexes are also case-sensitive. Therefore, if you want to match "Hello" and "hello", you can use [Character Sets](./#character-sets) to to allow both an uppercase
+By default, regexes are also case-sensitive. Therefore, if you want to match "Hello" and "hello", you can use [Character Sets]({{< ref "regex/basics.md#character-sets" >}}) to to allow both an uppercase
 and lowercase letter or set the regular expression to be case insensitive. See your language's method off doing this (case-insensitivity is often the "i" flag).
 
 ### Character Sets
