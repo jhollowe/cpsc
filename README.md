@@ -21,22 +21,24 @@ The main dependency for development is Hugo. You can download the latest [Hugo r
 
 #### Clone Repo
 
-- `git clone --recursive https://github.com/jhollowe/cpsc.git`
-  - The `--recursive` is important to also clone the theme's submodule repo
-- `cd cpsc`
+* `git clone --recursive https://github.com/jhollowe/cpsc.git`
+  * The `--recursive` is important to also clone the theme's submodule repo
+* `cd cpsc`
 
 #### Build Site
 
 This builds the site one time into the `public/` directory.
 
-- `hugo` OR
-- `hugo --minify`
-- (run `hugo help` for more options)
+* `hugo` OR
+* `hugo --minify`
+* (run `hugo help` for more options)
 
 #### Live Test Site
 
 This serves the site, watches for file changes, and updates the served content to be the latest changes on disk.
 
-- `hugo server` OR
-- `hugo server --minify`
-- (run `hugo help` for more options)
+* `hugo server` OR
+* `hugo server --minify`
+* (run `hugo help` for more options)
+
+<!-- markdownlint-disable-file MD001 -->
