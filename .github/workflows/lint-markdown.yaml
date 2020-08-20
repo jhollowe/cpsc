@@ -1,0 +1,20 @@
+name: "Lint Markdown"
+
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull Repo
+        uses: actions/checkout@v2
+        with:
+          submodules: true # fetch themes
+          fetch-depth: 0   # pull all commits so .GitInfo can find info for all files
+
+      - name: Lint markdown files
+        uses: avto-dev/markdown-lint@v1.3.1
