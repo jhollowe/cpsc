@@ -13,16 +13,18 @@ The goal of this project and site is not to just copy and paste guides from all 
 
 ## Contributing
 
-Please read the [Contributing Guidelines](CONTRIBUTING.md)
+I welcome contributions and improvements. Please read the [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 ## Development
 
 The main dependency for development is Hugo. You can download the latest [Hugo release](https://github.com/gohugoio/hugo/releases/) or use your package manager of choice, just be sure to get the **extended version** to allow for compiling the SASS to CSS. You can also follow the [official install guide](https://gohugo.io/getting-started/installing).
 
+The actual site material is within the `content/` directory. All the other directories are used for assets, templates, and layouts which Hugo uses to take the raw Markdown and turn it into a website. Check out all of [Hugo's Directory Structure](https://gohugo.io/getting-started/directory-structure/) for more info.
+
 #### Clone Repo
 
 * `git clone --recursive https://github.com/jhollowe/cpsc.git`
-  * The `--recursive` is important to also clone the theme's submodule repo
+  * The `--recursive` makes sure the theme's submodule repo is also cloned
 * `cd cpsc`
 
 #### Build Site
@@ -35,7 +37,7 @@ This builds the site one time into the `public/` directory.
 
 #### Live Test Site
 
-This serves the site, watches for file changes, and updates the served content to be the latest changes on disk.
+This serves the site, watches for file changes, and updates the served content to match the latest changes on disk.
 
 * `hugo server` OR
 * `hugo server --minify`
