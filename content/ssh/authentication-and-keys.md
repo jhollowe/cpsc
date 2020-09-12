@@ -15,7 +15,7 @@ SSH keys are a tool to use a public/private keypair instead (or in addition to) 
 To create an SSH key, use the following command to generate a modern, secure key:
 
 ```shell
-ssk-keygen -t ed25519 -f ~/.ssh/name_of_your_key -C "This is an optional comment"
+ssh-keygen -t ed25519 -f ~/.ssh/name_of_your_key -C "This is an optional comment"
 ```
 
 {{<alert style="info">}}ed25519 is not compatible with *very* old SSH servers. For advantages and catches of using ed25519, check out [this article for more information](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54#c4ec){{</alert>}}
